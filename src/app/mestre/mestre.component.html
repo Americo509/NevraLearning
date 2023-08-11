@@ -1,0 +1,32 @@
+<h1 class="titulo">
+    Exibindo o componente Mestre!!
+</h1>
+
+<button class="botao" (click)="increment()">Contador</button>
+
+<p>
+    O valor eh: {{count}}
+</p>
+
+<p>
+    Exibindo o componente Detalhe!!
+    <app-detail (botaoClick)="onButtonCLick()"></app-detail>
+</p>
+
+<div *ngIf="userSigned; else userSignOut">
+    <p>
+        Ola Usuario!
+    </p>
+</div>
+
+<ng-template #userSignOut>
+    <p>
+        Usuario, faca seu login!
+    </p>
+</ng-template>
+
+<ul>
+    <li *ngFor="let pessoa of pessoas">
+        {{pessoa}}
+    </li>
+</ul>

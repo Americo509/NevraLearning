@@ -1,0 +1,10 @@
+.botao{
+    color: pink;
+    background-color: black;
+}
+
+.titulo {
+    text-align: center;
+    padding: 12;
+    height: 12px;
+}
